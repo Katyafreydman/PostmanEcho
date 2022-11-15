@@ -16,8 +16,7 @@ class PostmanEchoTest {
                 .post("/post")
                 .then()
                 .statusCode(200)
-                .body("data", equalTo("Data"))
-                .body(matchesJsonSchemaInClasspath("postmanecho.schema.json"));
+                .body("data", equalTo("Data"));
 
-    }
+                    }
 }
